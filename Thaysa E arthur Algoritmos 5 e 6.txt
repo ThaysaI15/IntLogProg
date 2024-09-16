@@ -1,0 +1,103 @@
+Algoritmo 5
+
+Algoritmo "Média das Idades"
+// Disciplina   : Introdução à lógica de programação
+// Professora   : Larissa Ribeiro
+// Descrição   : Calcula média de diversas idades
+// Discentes   : Arthur Alvarenga Malospirito e Thaysa Miyasak Rezende
+// Data atual  : 16/09/2024
+Var
+   i, a, m: real
+
+Inicio
+   escreval ("Insira sua idade")
+   leia (a)
+   enquanto a >= 0 faca
+   m<-m+a
+   i<-i+1
+   escreval ("Insira sua idade")
+      leia (a)
+   fimenquanto
+   escreval("Foram lidas",i," Idades")
+   m <- m/i
+   escreval ("A média é:",m)
+
+Fimalgoritmo
+
+
+Algoritmo 6
+
+Algoritmo "Dobro dos números"
+// Disciplina   : Introdução à lógica de programação
+// Professora   : Larissa Ribeiro
+// Descrição   : Calcule o dobro dos valores digitados
+// Discentes   : Arthur Alvarenga Malospirito e Thaysa Miyasak Rezende
+// Data atual  : 16/09/2024
+Var
+   n,d:real
+
+Inicio
+
+   escreval("Digite um valor")
+   leia(n)
+   enquanto n>=0 faca
+      d<-n*2
+      escreval("O dobro de",n ," é",d)
+      Escreval("-----------------------------------------")
+      escreval("Digite um valor")
+      Leia(n)
+   fimenquanto
+
+Fimalgoritmo
+
+Algoritmo 1 da aula 2
+
+Algoritmo "senha e login"
+// Disciplina   : Introdução à lógica de programação
+// Professora   : Larissa Ribeiro
+// Descrição   : Insira senha e login
+// Discentes   : Arthur Alvarenga Malospirito e Thaysa Miyasak Rezende
+// Data atual  : 16/09/2024
+Var
+s,l: caractere
+x: logico
+Inicio
+
+enquanto x=falso faca
+escreval ("Insira seu login")
+leia (l)
+escreval ("Insira sua senha")
+leia (s)
+se (l="Admin") e (s="Admin123") entao
+x:=verdadeiro
+senao
+escreval("Inserir novamente")
+fimse
+fimenquanto
+escreval("Bem-vindo ao sistema")
+
+Fimalgoritmo
+
+Algoritmo 2 da aula 2
+
+Algoritmo "Soma dos valores pares até 100"
+// Disciplina   : Introdução à lógica de programação
+// Professora   : Larissa Ribeiro
+// Descrição   : Soma os valores pares e para de executar quando o valor for maior que 100
+// Discentes   : Arthur Alvarenga Malospirito e Thaysa Miyasak Rezende
+// Data atual  : 16/09/2024
+Var
+t,n,p :real
+Inicio
+      enquanto t<100 faca
+      escreval("Escreva o valor par a ser somado")
+      leia(n)
+      p:=n%2
+      se p=0 entao
+      t:=t+n
+      senao
+      escreval("Este número não é par")
+      fimse
+      fimenquanto
+      escreval("O total passou de 100 e é", t)
+Fimalgoritmo
